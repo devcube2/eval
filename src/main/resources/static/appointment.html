@@ -5,6 +5,30 @@
     <title>예약관리</title>
 </head>
 <body>
-<a href="index.html">홈으로</a>
+환자번호 : <input type="text" id="patientid"> <br/>
+의사번호 : <input type="text" id="doctorid"> <br/>
+예약날짜 : <input type="text" id="appointmentdate"> <br/>
+예약시간 : <input type="text" id="appointmenttime"> <br/>
+예약상태 : <input type="text" id="status"> <br/>
+<button onclick="onSave()">등록</button>
+
+<table>
+    <thead>
+    <tr>
+        <th>예약번호</th>
+        <th>환자번호</th>
+        <th>의사번호</th>
+        <th>예약날짜</th>
+        <th>예약시간</th>
+        <th>예약상태</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="appointment.js"></script>
 </body>
 </html>
