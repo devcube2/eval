@@ -5,6 +5,36 @@
     <title>환자관리</title>
 </head>
 <body>
-<a href="index.html">홈으로</a>
+이름 : <input type="text" id="name"> <br/>
+생일 : <input type="text" id="birthdate"> <br/>
+전화번호 : <input type="text" id="phone"> <br/>
+주소 : <input type="text" id="address"> <br/>
+<button onclick="onSave()">등록</button>
+
+<table>
+    <thead>
+    <tr>
+        <th>번호</th>
+        <th>이름</th>
+        <th>생일</th>
+        <th>전화번호</th>
+        <th>주소</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<br>
+상세보기
+<br>
+이름: <span id="view-name"></span>&nbsp;&nbsp;&nbsp;
+생일: <span id="view-birthdate"></span>&nbsp;&nbsp;&nbsp;
+전화번호: <span id="view-phone"></span>&nbsp;&nbsp;&nbsp;
+주소: <span id="view-address"></span>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="patient.js"></script>
 </body>
 </html>

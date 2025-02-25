@@ -5,6 +5,33 @@
     <title>의사관리</title>
 </head>
 <body>
+이름 : <input type="text" id="name"> <br/>
+전문의학 : <input type="text" id="speciality"> <br/>
+전화번호 : <input type="text" id="phone"> <br/>
+<button onclick="onSave()">등록</button>
 
+<table>
+    <thead>
+    <tr>
+        <th>번호</th>
+        <th>이름</th>
+        <th>전문의학과</th>
+        <th>전화번호</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<br>
+상세보기
+<br>
+이름: <span id="view-name"></span>&nbsp;&nbsp;&nbsp;
+전문의학과: <span id="view-speciality"></span>&nbsp;&nbsp;&nbsp;
+전화번호: <span id="view-phone"></span>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="doctor.js"></script>
 </body>
 </html>

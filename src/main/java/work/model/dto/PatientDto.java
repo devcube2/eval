@@ -1,6 +1,13 @@
 package work.model.dto;
 
-public class Patient {
+import lombok.*;
+
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
+public class PatientDto {
     private int patientid;
     private String name;
     private String birthdate;
